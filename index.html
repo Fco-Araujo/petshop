@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Feliz - Seu Pet Merece o Melhor!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegação Fixa -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-paw"></i>
+                <span>Pet Feliz</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Inicial com Carrossel -->
+    <section id="inicio" class="hero">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Pets Felizes">
+                <div class="carousel-content">
+                    <h1>Bem-vindos ao Pet Feliz!</h1>
+                    <p>O melhor cuidado para seu melhor amigo</p>
+                    <button class="cta-button">Conheça Nossos Serviços</button>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Produtos para Pets">
+                <div class="carousel-content">
+                    <h1>Produtos de Qualidade</h1>
+                    <p>Tudo que seu pet precisa em um só lugar</p>
+                    <button class="cta-button">Ver Produtos</button>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Serviços Veterinários">
+                <div class="carousel-content">
+                    <h1>Cuidado Profissional</h1>
+                    <p>Veterinários especializados para seu pet</p>
+                    <button class="cta-button">Agendar Consulta</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <button class="carousel-btn prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre o Pet Feliz</h2>
+                <p>Cuidando com amor dos seus melhores amigos há mais de 10 anos</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>Proporcionar o melhor cuidado, carinho e atenção para todos os pets, oferecendo serviços de qualidade e produtos seguros que garantam a saúde e felicidade dos seus companheiros de quatro patas.</p>
+                    
+                    <h3>Nossos Valores</h3>
+                    <ul>
+                        <li><i class="fas fa-heart"></i> Amor e respeito pelos animais</li>
+                        <li><i class="fas fa-shield-alt"></i> Segurança e qualidade em todos os serviços</li>
+                        <li><i class="fas fa-users"></i> Atendimento personalizado e humanizado</li>
+                        <li><i class="fas fa-leaf"></i> Sustentabilidade e responsabilidade ambiental</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipe Pet Feliz">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Cuidado completo para seu pet com profissionais especializados</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>Banho e Tosa</h3>
+                    <p>Banho relaxante e tosa personalizada para deixar seu pet ainda mais bonito e cheiroso.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Consultas Veterinárias</h3>
+                    <p>Atendimento veterinário completo com profissionais experientes e equipamentos modernos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Vacinação</h3>
+                    <p>Programa completo de vacinação para manter seu pet protegido e saudável.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Hotelzinho</h3>
+                    <p>Hospedagem segura e confortável para seu pet quando você precisar viajar.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-scissors"></i>
+                    </div>
+                    <h3>Tosa Higiênica</h3>
+                    <p>Cuidados especiais de higiene para manter seu pet sempre limpo e confortável.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Pet Taxi</h3>
+                    <p>Transporte seguro e confortável para levar seu pet onde ele precisar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Produtos</h2>
+                <p>Os melhores produtos para a saúde e felicidade do seu pet</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ração Premium">
+                    <h3>Ração Premium</h3>
+                    <p>Alimentação balanceada e nutritiva para todas as idades e raças.</p>
+                    <div class="product-price">A partir de R$ 45,90</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Brinquedos">
+                    <h3>Brinquedos Interativos</h3>
+                    <p>Diversão garantida com brinquedos seguros e estimulantes.</p>
+                    <div class="product-price">A partir de R$ 19,90</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Acessórios">
+                    <h3>Acessórios</h3>
+                    <p>Coleiras, guias, roupinhas e muito mais para deixar seu pet estiloso.</p>
+                    <div class="product-price">A partir de R$ 29,90</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Medicamentos">
+                    <h3>Medicamentos</h3>
+                    <p>Medicamentos veterinários de qualidade para cuidar da saúde do seu pet.</p>
+                    <div class="product-price">Consulte preços</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Higiene">
+                    <h3>Produtos de Higiene</h3>
+                    <p>Shampoos, condicionadores e produtos de limpeza especializados.</p>
+                    <div class="product-price">A partir de R$ 24,90</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Camas">
+                    <h3>Camas e Casinhas</h3>
+                    <p>Conforto e aconchego para o descanso do seu melhor amigo.</p>
+                    <div class="product-price">A partir de R$ 89,90</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fale Conosco</h2>
+                <p>Entre em contato e agende os serviços do seu pet</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua dos Pets, 123 - Centro<br>Teresina, PI - CEP: 64000-000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(86) 3223-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@petfeliz.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Seg-Sex: 8h às 18h<br>Sáb: 8h às 16h<br>Dom: 8h às 12h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        <span>Pet Feliz</span>
+                    </div>
+                    <p>Cuidando com amor dos seus melhores amigos há mais de 10 anos.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5586998887777" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Banho e Tosa</a></li>
+                        <li><a href="#servicos">Consultas Veterinárias</a></li>
+                        <li><a href="#servicos">Vacinação</a></li>
+                        <li><a href="#servicos">Hotelzinho</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#produtos">Ração Premium</a></li>
+                        <li><a href="#produtos">Brinquedos</a></li>
+                        <li><a href="#produtos">Acessórios</a></li>
+                        <li><a href="#produtos">Medicamentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Rua dos Pets, 123 - Centro</p>
+                    <p>Teresina, PI - CEP: 64000-000</p>
+                    <p>Telefone: (86) 3223-4567</p>
+                    <p>Email: contato@petfeliz.com</p>
+                </div>
+            </div>
+            <div class="atf">Desenvolvido por ATFweb
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pet Feliz. Todos os direitos reservados.  </p>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Fixo -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5586998887777?text=Olá! Gostaria de saber mais sobre os serviços do Pet Feliz." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>        
+    <script src="script.js"></script>
+    </body>
+    </html>
+
+   
