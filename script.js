@@ -233,15 +233,30 @@ contactFormElement.addEventListener('submit', function(e) {
 // Efeitos nos botões CTA do carrossel
 document.querySelectorAll('.cta-button').forEach(function(button) {
     button.addEventListener('click', function() {
-        const servicesSection = document.getElementById('servicos');
-        if (servicesSection) {
-            servicesSection.scrollIntoView({
+        const text = button.textContent.toLowerCase();
+
+        if (text.includes('serviços')) {
+            // Rolar até a seção de serviços
+            document.getElementById('servicos').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        } else if (text.includes('produtos')) {
+            // Rolar até a seção de produtos
+            document.getElementById('produtos').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        } else if (text.includes('consulta')) {
+            // Rolar até o formulário de contato (JavaScript)
+            document.getElementById('contato').scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
         }
     });
 });
+
 
 // Scroll to top no logo
 document.querySelector('.nav-logo').addEventListener('click', function() {
