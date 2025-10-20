@@ -741,6 +741,12 @@ body {
 }
 
 @media (max-width: 480px) {
+
+    body {
+     width: 100%;
+     overflow-x: hidden;
+     }
+
     .container {
         padding: 0 15px;
     }
